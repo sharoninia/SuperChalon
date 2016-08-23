@@ -1,0 +1,30 @@
+<ion-view view-title="Result">
+  <ion-content>
+
+    <ion-list>
+      <ion-item ng-repeat="result in results">
+        <div class="list card">
+
+		  <div class="item item-avatar">
+		    <img src="img/ionic.png"> <!-- TODO mostrar foto de usuario que comenta (?)-->
+		    <h2>{{result.name}}</h2>
+		    <p>{{result.adress}}</p>
+		  </div>
+
+		  <div class="item item-body">
+		    <p>
+		      {{c.comment}}
+		    </p>
+
+	     	<p>
+		      <button class="button button-small button-balanced" ng-click="openCommentsPosView()">{{result.counterPos}} Like</button>
+		      <button class="button button-small button-assertive" ng-click="openCommentsNegView()">{{result.counterNeg}} Dislike</button>
+		    </p>	    
+		  </div>
+		</div>
+
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

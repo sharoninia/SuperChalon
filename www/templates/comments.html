@@ -1,0 +1,35 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Comments</h1>
+    <div class="buttons">
+      <button class="button button-clear" style="color:#403B3B;" ng-click="closeCommentsView()">Cerrar</button>
+    </div>
+  </ion-header-bar>
+  <ion-view view-title="Result">
+  <ion-content>
+    
+    <ion-list>
+      <ion-item ng-repeat="c in comments">        
+
+        <div class="list card">
+
+		  <div class="item item-avatar">
+		    <img src="img/ionic.png"> <!-- TODO mostrar foto de usuario que comenta (?)-->
+		    <h2>{{c.name}}</h2>
+		    <p>{{c.dateComment}}</p>
+		  </div>
+
+		  <div class="item item-body">
+		    <p>
+		      {{c.comment}}
+		    </p>		    
+		  </div>
+		</div>
+
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>
+    <button class="button ion-plus button-small button-flowring"></button>
+</ion-modal-view>
