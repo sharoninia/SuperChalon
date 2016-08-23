@@ -18,17 +18,14 @@ angular.module('starter.controllers', [])
   }).then(function(modal) {
     $scope.modal = modal;
   });
-
   // Triggered in the login modal to close it
   $scope.closeLogin = function() {
     $scope.modal.hide();
   };
-
   // Open the login modal
   $scope.login = function() {
     $scope.modal.show();
   };
-
   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
     console.log('Doing login', $scope.loginData);
@@ -68,14 +65,35 @@ angular.module('starter.controllers', [])
     $scope.commentsView.show();
   };
 
-  $scope.doCommentsView = function() {
-    console.log('doCommentsPos', $scope.commentsData);
 
-    // TODO LOGICA DE BUSCAR COMMENTS Y AGREGARLOS A LA LISTA
+  $scope.addCommentData = {};
+
+  $ionicModal.fromTemplateUrl('templates/addComment.html', {
+    scope: $scope
+  }).then(function(modal) {
+    $scope.addCommentView = modal
+  });
+
+  $scope.closeAddCommentView = function() {
+    //TODO GRABAR
+    $scope.addCommentView.hide();
+  };
+
+  $scope.openAddCommentView = function() {
+    $scope.addCommentView.show();
+  };
+
+  $scope.doAddCommentView = function() {
+    console.log('doAddCommentView', $scope.addCommentData);
     $timeout(function() {
-      $scope.closeCommentsView();
+      $scope.closeAddCommentView();
     }, 1000);
   };
+
+  $scope.doAddProfile = function() {
+    //TODO AGREGAMOS PROFILE
+  };
+
 
 })
 

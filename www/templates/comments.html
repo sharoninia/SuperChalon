@@ -12,9 +12,7 @@
       <ion-item ng-repeat="c in comments">        
 
         <div class="list card">
-
 		  <div class="item item-avatar">
-		    <img src="img/ionic.png"> <!-- TODO mostrar foto de usuario que comenta (?)-->
 		    <h2>{{c.name}}</h2>
 		    <p>{{c.dateComment}}</p>
 		  </div>
@@ -31,5 +29,6 @@
 
   </ion-content>
 </ion-view>
-    <button class="button ion-plus button-small button-flowring"></button>
+
+  <button class="button ion-plus button-small button-flowring" ng-click="openAddCommentView()"></button>
 </ion-modal-view>
