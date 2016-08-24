@@ -80,6 +80,7 @@ angular.module('starter.controllers', [])
   };
 
   $scope.openAddCommentView = function() {
+    $scope.selected = {name: 'Pepa' , speciality: 'Pediatry'};
     $scope.addCommentView.show();
   };
 
