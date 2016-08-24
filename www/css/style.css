@@ -18,3 +18,17 @@
     background-color: #A2E6D2;
     color: rgba(255,255,255, 0.84);
 }
+
+.label-comment{
+    border-color: #ddd;
+    background-color: #fff;
+    color: #444;
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin: -1px;
+    padding: 16px;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 12px;
+}
