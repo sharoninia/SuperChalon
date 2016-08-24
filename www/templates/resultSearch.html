@@ -8,16 +8,12 @@
 		<h2>{{result.name}}</h2>
 		<p>{{result.adress}}</p>
 	</div>
-	<div class="item item-body">
-		<p>
-			{{c.comment}}
-		</p>
-	</div>
 	<div class="item item-divider" style="padding: 0">
 		<div class="button-bar">
 			<button class="button button-balanced" ng-click="openCommentsPosView()" style="border-radius: 0">{{result.counterPos}} Like</button>
 			<button class="button button-assertive" ng-click="openCommentsNegView()" style="border-radius: 0">{{result.counterNeg}} Dislike</button>
 		</div>
+		<div class="button-bar"><button class="button button-positive" ng-click="openCommentsPosView()" style="border-radius: 0">Comentar</button></div>
 	</div>
 </div>
 </ion-item>
