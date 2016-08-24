@@ -16,14 +16,14 @@
 
 		  	<div class="label-comment">How was the experience with this profesional?</div>
 		  	<ion-list>
-			  <ion-radio ng-model="choice" ng-value="1">Good Experience</ion-radio>
-			  <ion-radio ng-model="choice" ng-value="0">Bad Experience</ion-radio>
+			  <ion-radio ng-model="choice" ng-value="1"  class="comm-exp-g" >Good Experience</ion-radio>
+			  <ion-radio ng-model="choice" ng-value="0"  class="comm-exp-r" >Bad Experience</ion-radio>
 			</ion-list>
 
 		  	<div class="label-comment">Make a comment:</div>
 		  	<label class="item item-input item-stacked-label">
 		  		<span class="input-label">Comment</span>
-		    	<input type="text" placeholder="Comment">
+		    	<textarea class="textarea-comment" maxlength="140"></textarea>
 		  	</label>
 
 		</div>

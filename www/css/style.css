@@ -32,3 +32,21 @@
     border-style: solid;
     font-size: 12px;
 }
+
+.comm-exp-g .item-content{
+    background-color: #5FC07D;
+    color: #FFF;
+}
+
+.comm-exp-r .item-content{
+    background-color: #F72525;
+    color: #FFF;
+}
+
+.item-radio input:checked + .radio-content .item-content {
+    background-color: #BABABA;
+}
+
+.textarea-comment{
+    height: 120px;
+}
