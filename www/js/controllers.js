@@ -9,6 +9,34 @@ angular.module('starter.controllers', [])
   //$scope.$on('$ionicView.enter', function(e) {
   //});
 
+  $scope.specialities = [
+      { name: 'Pediatrics', id: 1},
+      { name: 'Oncology', id: 2},
+      { name: 'General Practitioner', id: 3},
+      { name: 'Nutritionist', id: 4},
+      { name: 'Dermatology', id: 5},
+    ];
+
+  $scope.profile = {};
+  $scope.objSearch = {};
+  $scope.countries = [
+      { name: 'Argentina', id: 1},
+    ];
+  $scope.states = [
+      { name: 'CABA', id: 1},
+      { name: 'Santa Fe', id: 2},
+      { name: 'Mendoza', id: 3},
+      { name: 'San Martin de los Andes', id: 4},
+      { name: 'Neuquén', id: 5},
+    ];
+  $scope.cities = [
+      { name: 'Monte Grande', id: 1},
+      { name: 'Avellaneda', id: 2},
+      { name: 'Sarandí', id: 3},
+      { name: 'Glew', id: 4},
+      { name: 'Ezeiza', id: 5},
+    ];
+
   // Form data for the login modal
   $scope.loginData = {};
 

@@ -6,10 +6,8 @@
 		    <div class="input-label">
 		      Speciality
 		    </div>
-		    <select>
-		      <option selected>Select...</option>
-		      <option>1</option>
-		      <option>2</option>
+		    <select ng-options="speciality as speciality.name for speciality in specialities track by speciality.id" ng-model="objSearch.speciality" ng-selected="objSearch.speciality">
+		    	<option value="">Seleccione...</option>
 		    </select>
 		  </label>
 
@@ -19,10 +17,8 @@
 		    <div class="input-label">
 		      Country
 		    </div>
-		    <select>
-		      <option selected>Select...</option>
-		      <option>1</option>
-		      <option>2</option>
+		    <select ng-options="country as country.name for country in countries track by country.id" ng-model="objSearch.country" ng-selected="objSearch.country">
+		    	<option value="">Seleccione...</option>
 		    </select>
 		  </label>
 
@@ -32,10 +28,8 @@
 		    <div class="input-label">
 		      State
 		    </div>
-		    <select>
-		      <option selected>Select...</option>
-		      <option>1</option>
-		      <option>2</option>
+		    <select ng-options="state as state.name for state in states track by state.id" ng-model="objSearch.state" ng-selected="objSearch.state">
+		    	<option value="">Seleccione...</option>
 		    </select>
 		  </label>
 
@@ -45,10 +39,8 @@
 		    <div class="input-label">
 		      City
 		    </div>
-		    <select>
-		      <option selected>Select...</option>
-		      <option>1</option>
-		      <option>2</option>
+		    <select ng-options="city as city.name for city in cities track by city.id" ng-model="objSearch.city" ng-selected="objSearch.city">
+		    	<option value="">Seleccione...</option>
 		    </select>
 		  </label>
 

@@ -8,25 +8,23 @@
 			    <div class="input-label">
 			      Speciality
 			    </div>
-			    <select>
-			      <option>Seleccione...</option>
-			      <option selected>1</option>
-			      <option>2</option>
+			    <select ng-options="speciality as speciality.name for speciality in specialities track by speciality.id" ng-model="profile.speciality" ng-selected="profile.speciality">
+			    	<option value="">Seleccione...</option>
 			    </select>
 		  	</label>
 
 		  	<label class="item item-input item-stacked-label">
 		  		<span class="input-label">Name Dr.</span>
-		    	<input type="text" placeholder="Name Dr.">
+		    	<input type="text" placeholder="Name Dr." ng-model="profile.name">
 		  	</label>
 
 		  	<label class="item item-input item-stacked-label">
 		  		<span class="input-label">Adress</span>
-		    	<input type="text" placeholder="Adress">
+		    	<input type="text" placeholder="Adress" ng-model="profile.adress">
 		  	</label>
 		  	<label class="item item-input item-stacked-label">
 		  		<span class="input-label">Number Phone</span>
-		    	<input type="text" placeholder="Number Phone">
+		    	<input type="text" placeholder="Number Phone" ng-model="profile.numberPhone">
 		  	</label>
 
 		</div>
