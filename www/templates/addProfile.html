@@ -25,6 +25,7 @@
 		  			<div class="input-label" style="font-size:13px;">
 				      Country
 				    </div>
+			  		<select ng-options="country as country.name for country in countries track by country.id" ng-model="profile.dom.country" ng-selected="profile.dom.country" ng-change="getStates($item, $model, $label);">
 			    		<option value="">Seleccione...</option>
 			    	</select>
 			    	<br/><br/>
@@ -33,6 +34,7 @@
 			    	<div class="input-label" style="font-size:13px;">
 				      State
 				    </div>
+				    <select ng-options="state as state.name for state in states track by state.id" ng-model="profile.dom.state" ng-selected="profile.dom.state" ng-change="getCities($item, $model, $label);">
 				    	<option value="">Seleccione...</option>
 				    </select>
 				    <br/><br/>
