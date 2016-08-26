@@ -17,7 +17,7 @@
 		    <div class="input-label">
 		      Country
 		    </div>
-		    <select ng-options="country as country.name for country in countries track by country.id" ng-model="objSearch.country" ng-selected="objSearch.country">
+		    <select ng-options="country as country.name for country in countries track by country.id" ng-model="objSearch.country" ng-selected="objSearch.country" ng-change="getStates($item, $model, $label);">
 		    	<option value="">Seleccione...</option>
 		    </select>
 		  </label>
@@ -28,7 +28,8 @@
 		    <div class="input-label">
 		      State
 		    </div>
-		    <select ng-options="state as state.name for state in states track by state.id" ng-model="objSearch.state" ng-selected="objSearch.state">
+		    <select ng-options="state as state.name for state in states track by state.id" ng-model="objSearch.state" ng-selected="objSearch.state" 
+		    ng-change="getCities($item, $model, $label);">
 		    	<option value="">Seleccione...</option>
 		    </select>
 		  </label>
@@ -46,7 +47,7 @@
 
 		</div>
 		<div class="item">
-			<a class="button button-block button-calm" href="#/app/resultSearch">
+			<a class="button button-block button-dark" href="#/app/resultSearch">
 			  Search
 			</a>
 		</div>

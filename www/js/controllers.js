@@ -19,23 +19,34 @@ angular.module('starter.controllers', [])
 
   $scope.profile = {};
   $scope.objSearch = {};
+  $scope.contact = {};
+  
   $scope.countries = [
       { name: 'Argentina', id: 1},
     ];
-  $scope.states = [
+  
+  
+  $scope.getStates = function($item, $model, $label) {
+    //TODO buscamos
+    $scope.states = [
       { name: 'CABA', id: 1},
       { name: 'Santa Fe', id: 2},
       { name: 'Mendoza', id: 3},
       { name: 'San Martin de los Andes', id: 4},
       { name: 'Neuquén', id: 5},
     ];
-  $scope.cities = [
+  };
+
+   $scope.getCities = function($item, $model, $label) {
+    //TODO buscamos
+    $scope.cities = [
       { name: 'Monte Grande', id: 1},
       { name: 'Avellaneda', id: 2},
       { name: 'Sarandí', id: 3},
       { name: 'Glew', id: 4},
       { name: 'Ezeiza', id: 5},
     ];
+   }
 
   // Form data for the login modal
   $scope.loginData = {};
@@ -121,8 +132,13 @@ angular.module('starter.controllers', [])
 
   $scope.doAddProfile = function() {
     //TODO AGREGAMOS PROFILE
+    
   };
 
+  $scope.sendContact = function(){
+    //TODO ENVIAMOS CONTACTO
+
+  };
 
 })
 

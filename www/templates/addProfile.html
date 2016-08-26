@@ -20,10 +20,40 @@
 
 		  	<label class="item item-input item-stacked-label">
 		  		<span class="input-label">Adress</span>
-		    	<input type="text" placeholder="Adress" ng-model="profile.adress">
+		  		<br/><br/>
+		  		<label class="item-input item-select">
+		  			<div class="input-label" style="font-size:13px;">
+				      Country
+				    </div>
+			    		<option value="">Seleccione...</option>
+			    	</select>
+			    	<br/><br/>
+			    </label>
+			    <label class="item-input item-select">
+			    	<div class="input-label" style="font-size:13px;">
+				      State
+				    </div>
+				    	<option value="">Seleccione...</option>
+				    </select>
+				    <br/><br/>
+			    </label>
+			    <label class="item-input item-select">
+				    <div class="input-label" style="font-size:13px;">
+				      City
+				    </div>
+				    <select ng-options="city as city.name for city in cities track by city.id" ng-model="profile.dom.city" ng-selected="profile.dom.city">
+				    	<option value="">Seleccione...</option>
+				    </select>
+				    <br/><br/>
+			    </label>
+		    	<input type="text" placeholder="Street" ng-model="profile.dom.street">
+		    	<input type="text" placeholder="Number" ng-model="profile.dom.number">
+		    	<input type="text" placeholder="Postal Code" ng-model="profile.dom.cp">
+		    	<input type="text" placeholder="Depart." ng-model="profile.dom.depart">
 		  	</label>
 		  	<label class="item item-input item-stacked-label">
 		  		<span class="input-label">Number Phone</span>
+		  		<input type="text" placeholder="Cod. Area" ng-model="profile.codArea">
 		    	<input type="text" placeholder="Number Phone" ng-model="profile.numberPhone">
 		  	</label>
 

@@ -1,5 +1,24 @@
 <ion-view view-title="Contact">
   <ion-content>
-    
+    <form>
+    	<div class="list">
+    		<label class="item item-input item-stacked-label">
+		  		<span class="input-label">Name</span>
+		    	<input type="text" placeholder="Name" ng-model="contact.name">
+		  	</label>
+		  	<label class="item item-input item-stacked-label">
+		  		<span class="input-label">Number Phone</span>
+		  		<input type="text" placeholder="Cod. Area" ng-model="contact.codArea">
+		    	<input type="text" placeholder="Number Phone" ng-model="contact.numberPhone">
+		  	</label>
+		  	<div class="item item-input item-stacked-label">
+		  		<span class="input-label">Make a comment:</span>
+		  		<textarea ng-model="contact.comment" maxlength="200" class="textarea-comment" ></textarea>
+		  	</div>
+    	</div>
+    	<div class="item">
+			<button class="button button-block button-royal" ng-click="sendContact()">Send</button>
+		</div>
+    </form>
   </ion-content>
 </ion-view>
