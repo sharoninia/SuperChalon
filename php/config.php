@@ -1,8 +1,8 @@
 <?php
 ini_set('display_errors','On'); ini_set('error_reporting','E_ALL | E_STRICT'); error_reporting(E_ALL);
 
-$db_name = 'root';
-$db_user = 'superchalon';
+$db_name = 'superchalon';
+$db_user = 'root';
 $db_pass = '12345';
 $db_host = 'localhost';
 
